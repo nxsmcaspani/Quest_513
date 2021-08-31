@@ -1,0 +1,10 @@
+<h2>My baby onomatopeias</h2>
+
+<div>
+    <ul *ngFor="let onomatopoeia of onomatopoeias">
+        <li>{{ onomatopoeia }}</li>
+    </ul>
+</div>
+
+<hr><br /><br />
+<app-create-onomatopoeias (createOnomatopia)="onReceiveNewOnomatopia($event)"></app-create-onomatopoeias>
