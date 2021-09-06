@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./onomatopoeias.component.css']
 })
 export class OnomatopoeiasComponent implements OnInit {
-  public onomatopoeias:string[];
+  public onomatopoeias:string[] = [];
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onReceiveNewOnomatopia(onomatopoeia:string) : void {
+  onReceiveNewOnomatopia(onomatopoeia:any) : void {
     this.onomatopoeias.push(onomatopoeia);
   }
 }

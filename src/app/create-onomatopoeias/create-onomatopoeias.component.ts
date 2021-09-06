@@ -13,7 +13,7 @@ export class CreateOnomatopoeiasComponent implements OnInit {
   }
 
   @Output()
-  sendOnomatopiaToParent:EventEmitter<any> = new EventEmitter<any>();
+  sendOnomatopiaToParent:EventEmitter<any> = new EventEmitter();
 
   public createOnomatopoeia() : void {
     this.sendOnomatopiaToParent.emit(this.newOnomatopoeia);
